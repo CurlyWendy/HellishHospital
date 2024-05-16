@@ -8,7 +8,7 @@ class Patient(AbstractUser):
         on_delete=models.CASCADE,
         related_name='benefits'
     )
-    age = models.PositiveIntegerField(default=NULL)
+    age = models.DateField(blank=True, null=True)
     snils = models.CharField(max_length=30)
     policy_number = models.CharField(max_length=30)
 
