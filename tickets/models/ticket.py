@@ -1,7 +1,7 @@
 from django.db import models
-from .doctor import Doctor
-from .patient import Patient
-from .ticket_status import TicketStatus
+from Users.models.doctor import Doctor
+from Users.models.patient import Patient
+from ticket_status import TicketStatus
 
 class Ticket(models.Model):
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE)

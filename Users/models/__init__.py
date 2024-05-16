@@ -1,1 +1,1 @@
-from .ticket import Ticket
+from ...tickets.models.ticket import Ticket
