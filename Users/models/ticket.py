@@ -10,4 +10,4 @@ class Ticket(models.Model):
     status = models.ForeignKey(TicketStatus, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Ticket #{self.id} - Patient: {self.patient.user.username}, Doctor: {self.doctor.user.username}, Status: {self.status.name}"
+        return f"Талон: #{self.id} - Пациент: {self.patient.user.username}, Доктор: {self.doctor.user.username}, Статус: {self.status.name}"
